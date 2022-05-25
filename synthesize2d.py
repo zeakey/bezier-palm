@@ -142,7 +142,7 @@ def batch_process(proc_index, ranges, args, imagenet_images=None):
         flag1 = [np.random.uniform()>0.01, np.random.uniform()>0.01, np.random.uniform()>0.01, np.random.uniform()>0.9]
 
         # start/end points of secondary creases
-        n2 = np.random.randint(5, 10)
+        n2 = np.random.randint(5, 15)
         coord2 = np.random.uniform(0, args.imsize, size=(n2, 2, 2))
         s2 = np.clip(np.random.normal(scale=0.4, size=(n2,)), -0.6, 0.6)
         t2 = np.clip(np.random.normal(loc=0.5, scale=0.4, size=(n2,)), 0.3, 0.7)
