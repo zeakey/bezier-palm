@@ -1,0 +1,3 @@
+[submodule "MANO"]
+	path = MANO
+	url = https://github.com/otaheri/MANO
